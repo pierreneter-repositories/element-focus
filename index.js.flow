@@ -1,0 +1,9 @@
+interface useElementFocus {
+  isFocused: boolean,
+  bind: {
+    onFocus: (event: HTMLElement) => void,
+    onBlur: (event: HTMLElement) => void,
+  }
+}
+
+declare export default function useElementFocus(): useElementFocus;
